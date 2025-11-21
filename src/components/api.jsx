@@ -98,7 +98,7 @@ export const cloudioService = {
       return await response.json();
 
     } catch (error) {
-      console.error("❌ Error creating task:", error);
+      console.error("Error creating task:", error);
       throw error;
     }
   },
@@ -281,7 +281,7 @@ export const cloudioService = {
       return updateJson;
 
     } catch (err) {
-      console.error("❌ TOGGLE TASK ERROR:", err);
+      console.error("TOGGLE TASK ERROR:", err);
       throw err;
     }
   },
@@ -356,7 +356,7 @@ export const cloudioService = {
       return deleteJson;
 
     } catch (err) {
-      console.error("❌ DELETE ERROR:", err);
+      console.error("DELETE ERROR:", err);
       throw err;
     }
   }

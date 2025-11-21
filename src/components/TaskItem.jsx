@@ -8,7 +8,7 @@ const TaskItem = ({ task, deleteTask, toggleTask, editTask }) => {
   const [editedText, setEditedText] = useState(task.text);
   const [editedDescription, setEditedDescription] = useState(task.description);
 
-  // Function to handle edit/save button
+ 
   const handleEdit = () => {
     if (isEditing) {
       if (editedText.trim()) {
@@ -19,29 +19,29 @@ const TaskItem = ({ task, deleteTask, toggleTask, editTask }) => {
         return;
       }
     }
-    // Toggle editing mode
+   
     setIsEditing(!isEditing);
   };
 
-  // Create class for the outer card
+  
   let cardClass = 'task-card';
   if (task.priority) {
     cardClass += ' ' + task.priority.toLowerCase() + '-priority';
   }
 
-  // Create class for title
+ 
   let titleClass = 'task-title';
   if (task.completed) {
     titleClass += ' completed';
   }
 
-  // Create class for description
+  
   let descClass = 'task-description';
   if (task.completed) {
     descClass += ' completed';
   }
 
-  // Convert deadline to readable format
+  
   const formattedDeadline = new Date(task.deadline).toLocaleDateString('en-GB');
 
   return (
