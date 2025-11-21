@@ -1,0 +1,48 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.topbar {
+  /* width: 1540px; */
+  width: 96.75%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: white;
+  color: black;
+  position: relative;
+  border: solid 1px;
+  z-index: 10;
+  top: 0;
+  /* border: 1px solid black; */
+  overflow-x: hidden;
+}
+
+
+.topbar-left h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.topbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.topbar-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+}
+
+.topbar-icon:hover {
+  transform: scale(1.1);
+}

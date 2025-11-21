@@ -1,0 +1,482 @@
+/* 
+.App {
+  height: 100vh;              
+  width: 100vw;               
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fceabb, white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  overflow-y: auto;         
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+.new-task {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.new-task:hover {
+  background-color: #388e3c;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+
+.FilterDropdown,
+.TaskList,
+.TaskStats {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: left;
+}
+
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.modal-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-buttons button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #388e3c;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+
+.App::-webkit-scrollbar {
+  width: 8px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+ */
+
+ /* home.css */
+
+
+
+/* html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 30px 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* Make body and root take full height  #root*/
+/* html, body ,#root{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+  background-color: #f0f2f5; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* App container 2*/
+/* .App {
+  min-height: 100vh;
+  background-color: white; 
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+} */
+
+/* Reset default margin and padding */
+
+html, body ,#root{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+  background-color: #f0f2f5; /* Light gray background outside the app */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.App {
+  min-height: 100vh;
+  background-color: lightblue;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  display: flex;
+  /* top: 40px; */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.new-task {
+  background-color: #00ccff;
+  color: white;
+  height: 80px;
+  width: 200px;
+  padding: 10px 18px;
+  margin-right: 15px;
+  font-size: 1rem;
+  position: relative;
+  top: 0;
+  right: 400px;
+}
+
+.new-task::before {
+        content: "+"; /* The add symbol */
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.new-task:hover {
+  background-color: #0056b3;
+}
+
+/* .logout-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 18px;
+  top:80px;
+  font-size: 1rem;
+  position: relative;
+  left:600px;
+} */
+
+.logout-button:hover {
+  background-color: #a71d2a;
+}
+
+/* Button container, put new-task and logout inline */
+.new-task, .logout-button {
+  display: inline-block;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90vw;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal-content input[type="text"],
+.modal-content textarea,
+.modal-content input[type="date"],
+.modal-content select {
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  resize: vertical;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content textarea:focus,
+.modal-content input[type="date"]:focus,
+.modal-content select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal-content textarea {
+  min-height: 70px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  padding: 8px 18px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.modal-buttons button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-buttons button:first-child:hover {
+  background-color: #1e7e34;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #565e64;
+}
+
+/* Filter dropdown */
+.filter-dropdown {
+  margin: 20px 0 30px;
+  width: 200px;
+}
+
+/* Task List Container */
+/* Your TaskList.css snippet: */
+/* .task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+} */
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+}
+
+/* TaskStats container */
+/* .task-stats {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  font-weight: 600;
+  color: #555;
+} */
+
+.task-stats {
+  width: 100%;
+  max-width: 1100px;
+  background-color: #fafafa;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.delete-all-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-all-button:hover {
+  background-color: #d32f2f;
+}
+
+.table{
+ background-color: #007bff;        /* Primary blue color */
+  color: white;                     /* White text */
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 0;                   /* Some spacing around the button */
+  font-weight: 500;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table:hover {
+  background-color: #0056b3;        /* Darker blue on hover */
+  transform: translateY(-2px);      /* Slight lift */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.table:active {
+  background-color: #004494;
+  transform: translateY(0);
+}

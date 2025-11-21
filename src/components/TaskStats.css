@@ -1,0 +1,108 @@
+/* 
+
+.task-stats {
+  width: 250px;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  margin-right: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.task-stats h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.stats-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stats-box div {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.stats-box h4 {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.stats-box p {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+} */
+
+/* TaskStats.css */
+
+/* TaskStats.css */
+
+/* TaskStats.css */
+
+.task-stats {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 280px;
+  height: 130px;
+  background-color: lightblue;
+  border: 1px solid black;                                      /* #ddd */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 999;
+  
+}
+
+.task-stats h2 {
+  font-size: 12px;
+  margin: 0 0 8px;
+  color: #444;
+  text-align: center;
+}
+
+.stats-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.stats-box div {
+  background-color: lightblue;               /*#f5f5f5*/
+  border-radius: 6px;
+  padding: 6px;
+  text-align: center;
+  border: 1px solid black;              /*#eee*/
+}
+
+.stats-box h4 {
+  margin: 0;
+  font-size: 11px;
+  color: #777;
+}
+
+.stats-box p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+
+

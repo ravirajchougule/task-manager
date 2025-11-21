@@ -1,68 +1,173 @@
 
 
 
-li {
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.task-card {
+  /* margin-top: 50px; */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px 20px;
+  position: inherit;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 6px solid transparent;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Priority Colors */
+.task-card.top-priority {
+  border-left-color: #dc3545; /* Red */
+  background-color: rgb(231, 68, 68);
+}
+
+.medium-priority {
+  border-left-color: #ffc107; /* Amber */
+  background-color:#e6ad04 ;
+}
+
+.low-priority {
+  border-left-color: #28a745; /* Green */
+  background-color: green;
+}
+
+/* Header */
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  padding: 14px 18px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: background 0.2s ease-in-out;
-  gap: 10px;
+  margin-bottom: 12px;
 }
 
-li:hover {
-  background-color: #f1f8e9;
+.task-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  flex-grow: 1;
 }
 
-input[type="checkbox"] {
-  transform: scale(1.3);
+/* Completed task style */
+.task-title.completed {
+  text-decoration: line-through;
+  color: #888;
+  font-style: italic;
+}
+
+/* Checkbox */
+.task-card-header input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
   cursor: pointer;
 }
 
-span {
-  flex: 1;
-  font-size: 16px;
-  color: #333;
+/* Body */
+.task-card-body {
+  flex-grow: 1;
+  margin-bottom: 15px;
 }
 
-/* here if task is completed it shoe linethrough on the task name. */
-span.completed {
+.task-description {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+
+/* Completed description style */
+.task-description.completed {
   text-decoration: line-through;
   color: #999;
+  font-style: italic;
 }
 
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+/* Edit inputs */
+.edit-title {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.edit-title:focus {
   outline: none;
+  border-color: #007bff;
 }
 
-button {
-  padding: 8px 14px;
-  font-size: 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.edit-description {
+  width: 95%;
+  min-height: 60px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.edit-description:focus {
+  outline: none;
+  border-color:black;
+}
+
+/* Task Info (Priority and Deadline) */
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
   font-weight: 600;
-  transition: 0.2s ease-in-out;
+  color: #555;
 }
 
-button:hover {
-  opacity: 0.85;
+/* Actions buttons */
+.task-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
 }
 
-button:nth-child(3) {
-  background-color: #42a5f5;
+.task-card-actions button {
+  cursor: pointer;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.task-card-actions button:first-child {
+  background-color: #007bff;
   color: white;
 }
 
-button:nth-child(4) {
-  background-color: #ef5350;
+.task-card-actions button:first-child:hover {
+  background-color: #0056b3;
+}
+
+.task-card-actions button:last-child {
+  background-color: #dc3545;
   color: white;
+}
+
+.task-card-actions button:last-child:hover {
+  background-color: #a71d2a;
 }
 

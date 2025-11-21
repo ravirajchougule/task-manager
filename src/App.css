@@ -1,4 +1,78 @@
 
+
+/* Reset default margin and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+
+.App {
+  position: relative; /* required for absolute children like .logout-container */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 body {
   margin: 0;
   padding: 0;
@@ -28,3 +102,8 @@ h1 {
   gap: 16px;
   margin-bottom: 24px;
 }
+
+
+
+
+ */
